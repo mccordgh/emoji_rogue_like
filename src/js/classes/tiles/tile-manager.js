@@ -1,10 +1,10 @@
 import { Grass } from './paths/grass';
-import { SolidTree } from './solids/solid-tree';
+import { borderTree } from './solids/solid-tree';
 
 let tiles = [];
 
 tiles[0] = new Grass();
-tiles[1] = new SolidTree();
+tiles[1] = new borderTree();
 
 export class TileManager {
 

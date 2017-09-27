@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0868b643-36cf-4f14-8e2c-b80bed530b52" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/display/display.js" afterPath="$PROJECT_DIR$/src/js/classes/display/display.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/entities/creatures/creature.js" afterPath="$PROJECT_DIR$/src/js/classes/entities/creatures/creature.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/entities/creatures/player.js" afterPath="$PROJECT_DIR$/src/js/classes/entities/creatures/player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/entities/entity-manager.js" afterPath="$PROJECT_DIR$/src/js/classes/entities/entity-manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/game.js" afterPath="$PROJECT_DIR$/src/js/classes/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/input/input-manager.js" afterPath="$PROJECT_DIR$/src/js/classes/input/input-manager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/tiles/paths/grass.js" afterPath="$PROJECT_DIR$/src/js/classes/tiles/paths/grass.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/tiles/solids/solid-tree.js" afterPath="$PROJECT_DIR$/src/js/classes/tiles/solids/solid-tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/worlds/maze-generator.js" afterPath="$PROJECT_DIR$/src/js/classes/worlds/maze-generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/worlds/world.js" afterPath="$PROJECT_DIR$/src/js/classes/worlds/world.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/classes/tiles/tile-manager.js" afterPath="$PROJECT_DIR$/src/js/classes/tiles/tile-manager.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="display.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/classes/display/display.js">
+      <file leaf-file-name="emoji-manager.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/classes/emojis/emoji-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="280">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -65,6 +60,8 @@
       <find>console.log</find>
       <find>arial</find>
       <find>display</find>
+      <find>SolidTree</find>
+      <find>☘️</find>
     </findStrings>
     <replaceStrings>
       <replace>this.title</replace>
@@ -75,6 +72,7 @@
       <replace>TILE_SIZE</replace>
       <replace>getInputManager</replace>
       <replace>renderTiles</replace>
+      <replace>borderTree</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -96,18 +94,19 @@
         <option value="$PROJECT_DIR$/src/js/classes/entities/entity.js" />
         <option value="$PROJECT_DIR$/src/js/classes/handler.js" />
         <option value="$PROJECT_DIR$/src/js/classes/tiles/tile.js" />
-        <option value="$PROJECT_DIR$/src/js/classes/tiles/paths/grass.js" />
         <option value="$PROJECT_DIR$/src/js/classes/tiles/tile-manager.js" />
-        <option value="$PROJECT_DIR$/src/css/main.css" />
         <option value="$PROJECT_DIR$/src/js/classes/input/input-manager.js" />
-        <option value="$PROJECT_DIR$/src/js/classes/tiles/solids/solid-tree.js" />
         <option value="$PROJECT_DIR$/src/js/classes/worlds/world.js" />
         <option value="$PROJECT_DIR$/src/js/classes/entities/entity-manager.js" />
         <option value="$PROJECT_DIR$/src/js/classes/entities/creatures/creature.js" />
-        <option value="$PROJECT_DIR$/src/js/classes/entities/creatures/player.js" />
         <option value="$PROJECT_DIR$/src/js/classes/worlds/maze-generator.js" />
         <option value="$PROJECT_DIR$/src/js/classes/game.js" />
         <option value="$PROJECT_DIR$/src/js/classes/display/display.js" />
+        <option value="$PROJECT_DIR$/src/js/classes/tiles/paths/grass.js" />
+        <option value="$PROJECT_DIR$/src/js/classes/tiles/solids/solid-tree.js" />
+        <option value="$PROJECT_DIR$/src/css/main.css" />
+        <option value="$PROJECT_DIR$/src/js/classes/entities/creatures/player.js" />
+        <option value="$PROJECT_DIR$/src/js/classes/emojis/emoji-manager.js" />
       </list>
     </option>
   </component>
@@ -253,6 +252,14 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="emojis" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="emoji_rogue_like" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emoji_rogue_like" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tiles" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -316,12 +323,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506372824914</updated>
       <workItem from="1506372826278" duration="3696000" />
-      <workItem from="1506470214839" duration="5723000" />
+      <workItem from="1506470214839" duration="7884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9419000" />
+    <option name="totallyTimeSpent" value="11580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -396,6 +403,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1506373358000" expanded="true" signature="7:44" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,52 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/paths/grass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <marker date="1506473482000" expanded="true" signature="65:117" ph="{...}" />
-            <marker date="1506473482000" expanded="true" signature="85:115" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/tile-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding>
-            <marker date="1506473501000" expanded="true" signature="7:87" ph="..." />
-            <marker date="1506473501000" expanded="true" signature="184:232" ph="{...}" />
-            <marker date="1506473501000" expanded="true" signature="207:230" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/tile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <marker date="1506473482000" expanded="true" signature="18:217" ph="{...}" />
-            <marker date="1506473482000" expanded="true" signature="45:118" ph="{...}" />
-            <marker date="1506473482000" expanded="true" signature="138:178" ph="{...}" />
-            <marker date="1506473482000" expanded="true" signature="190:215" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <marker date="1506473882000" expanded="true" signature="11:102" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/classes/handler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -564,17 +528,6 @@
             <marker date="1506479231000" expanded="true" signature="53:326" ph="{...}" />
             <marker date="1506479231000" expanded="true" signature="356:385" ph="{...}" />
             <marker date="1506479231000" expanded="true" signature="412:442" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/solids/solid-tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <marker date="1506479427000" expanded="true" signature="69:142" ph="{...}" />
-            <marker date="1506479427000" expanded="true" signature="89:140" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -676,30 +629,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/classes/entities/creatures/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <marker date="1506479763000" expanded="true" signature="201:1010" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="231:343" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="356:553" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="408:522" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="567:647" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="662:1008" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="761:791" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="828:857" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="907:937" ph="{...}" />
-            <marker date="1506479763000" expanded="true" signature="975:1004" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/classes/worlds/maze-generator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="127" column="17" lean-forward="false" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/display/display.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <marker date="1506480076000" expanded="true" signature="48:788" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="71:126" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="146:305" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="324:616" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="631:678" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="694:742" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="760:786" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="854:902" ph="{...}" />
+            <marker date="1506480076000" expanded="true" signature="904:1099" ph="//..." />
+            <marker date="1506480076000" expanded="true" signature="1101:1381" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/paths/grass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <marker date="1506480665000" expanded="true" signature="7:88" ph="..." />
+            <marker date="1506480665000" expanded="true" signature="122:201" ph="{...}" />
+            <marker date="1506480665000" expanded="true" signature="142:199" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/solids/solid-tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <marker date="1506480713000" expanded="true" signature="7:90" ph="..." />
+            <marker date="1506480713000" expanded="true" signature="129:238" ph="{...}" />
+            <marker date="1506480713000" expanded="true" signature="149:236" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,10 +705,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/classes/display/display.js">
+    <entry file="file://$PROJECT_DIR$/src/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="168">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1506481795000" expanded="true" signature="11:102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/tile-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <marker date="1506480713000" expanded="true" signature="7:88" ph="..." />
+            <marker date="1506480713000" expanded="true" signature="186:234" ph="{...}" />
+            <marker date="1506480713000" expanded="true" signature="209:232" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/tiles/tile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <marker date="1506473482000" expanded="true" signature="18:217" ph="{...}" />
+            <marker date="1506473482000" expanded="true" signature="45:118" ph="{...}" />
+            <marker date="1506473482000" expanded="true" signature="138:178" ph="{...}" />
+            <marker date="1506473482000" expanded="true" signature="190:215" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/entities/creatures/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <marker date="1506482018000" expanded="true" signature="53:143" ph="..." />
+            <marker date="1506482018000" expanded="true" signature="260:1109" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="290:442" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="455:652" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="507:621" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="666:746" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="761:1107" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="860:890" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="927:956" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="1006:1036" ph="{...}" />
+            <marker date="1506482018000" expanded="true" signature="1074:1103" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/classes/emojis/emoji-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>

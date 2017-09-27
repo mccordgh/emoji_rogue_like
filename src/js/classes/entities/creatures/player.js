@@ -1,13 +1,14 @@
 // import { Assets } from '../../gfx/assets';
 import { Creature } from './creature';
+import { EmojiManager } from '../../emojis/emoji-manager';
 
-const GET_INPUT_WAIT_TIME = 3;
+const GET_INPUT_WAIT_TIME = 8;
 let timeSinceLastInput = GET_INPUT_WAIT_TIME;
 
 export class Player extends Creature {
   constructor(handler, x, y){
     super(handler, x, y);
-    this.asset = '😎';
+    this.asset = EmojiManager.getEmojiByKey('faceSunglasses');
     this.x = x;
     this.y = y;
     this.type = 'player';
