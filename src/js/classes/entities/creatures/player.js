@@ -1,6 +1,9 @@
 // import { Assets } from '../../gfx/assets';
 import { Creature } from './creature';
 
+const GET_INPUT_WAIT_TIME = 3;
+let timeSinceLastInput = GET_INPUT_WAIT_TIME;
+
 export class Player extends Creature {
   constructor(handler, x, y){
     super(handler, x, y);
@@ -11,29 +14,24 @@ export class Player extends Creature {
   }
 
   tick(dt) {
-    console.log(dt)
-    this.xMove = this.yMove = 0;
-    this.getInput();
-    this.move();
+    if (timeSinceLastInput > GET_INPUT_WAIT_TIME) {
+      this.xMove = this.yMove = 0;
+      this.getInput();
+      this.move();
+      timeSinceLastInput = 0;
+    }
 
-    // this.handler.getGameCamera().centerOnEntity(this);
+    timeSinceLastInput++;
   }
 
   render(g) {
     g.drawAsset(this.asset, this.x * TILE_SIZE, (this.y + 1) * TILE_SIZE);
-    // g.drawAsset(this.asset, this.x - this.handler.getGameCamera().getxOffset(), this.y - this.handler.getGameCamera().getyOffset(), TILE_SIZE, TILE_SIZE);
-
-    // ****** DRAW BOUNDING BOX DON'T DELETE!!
-    // g.fillStyle = "green";
-    // g.fillRect(this.b.x + this.x - this.handler.getGameCamera().getxOffset(), this.b.y + this.y - this.handler.getGameCamera().getyOffset(), this.b.w, this.b.h);
-    // ****** DRAW BOUNDING BOX DON'T DELETE!!
   }
 
   getInput() {
     let manager = this.handler.getInputManager();
-    console.log(manager, manager.up);
+
     if (manager.up || manager.w || manager.z) {
-      console.log('up');
       this.yMove = -1;
     }
 

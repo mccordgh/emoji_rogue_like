@@ -9,17 +9,17 @@ export class Display {
   createDisplay() {
     document.title = this.title;
     gameCanvas = document.getElementById("canvas");
-    this.resizeCanvas();
     graphics = gameCanvas.getContext("2d");
-    graphics.font = `${TILE_SIZE}px Arial`;
-    graphics.webkitImageSmoothingEnabled = false;
-    graphics.mozImageSmoothingEnabled = false;
-    graphics.imageSmoothingEnabled = false;
+    this.resizeCanvas();
   }
 
   resizeCanvas() {
     gameCanvas.width = document.body.clientWidth;
     gameCanvas.height = document.body.clientHeight;
+    graphics.font = `${TILE_SIZE}px Arial`;
+    graphics.webkitImageSmoothingEnabled = false;
+    graphics.mozImageSmoothingEnabled = false;
+    graphics.imageSmoothingEnabled = false;
   }
 
   getWidth() {
@@ -34,11 +34,6 @@ export class Display {
     return graphics;
   }
 }
-
-window.onresize = () => {
-  gameCanvas.width = document.body.clientWidth;
-  gameCanvas.height = document.body.clientHeight;
-};
 
 CanvasRenderingContext2D.prototype.drawAsset = (asset, x, y) => {
   graphics.fillText(asset, x, y, TILE_SIZE);

@@ -71,6 +71,7 @@ export class Game {
   init() {
     handler = new Handler(this);
     display = new Display(this.title);
+    window.onresize = display.resizeCanvas();
     inputManager = new InputManager();
     graphics = display.getGraphics();
     state = new State();

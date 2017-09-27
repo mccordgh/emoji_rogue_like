@@ -1,7 +1,5 @@
 import { Entity } from '../entity';
 
-let n;
-
 export class Creature extends Entity {
   constructor(handler, x, y) {
     super(handler, x, y);
@@ -14,8 +12,10 @@ export class Creature extends Entity {
   }
 
   move() {
-    this.x += this.xMove;
-    this.y += this.yMove;
+    if (!this.collisionWithTile(this.x + this.xMove, this.y + this.yMove)) {
+      this.x += this.xMove;
+      this.y += this.yMove;
+    }
   }
 
   moveX() {
