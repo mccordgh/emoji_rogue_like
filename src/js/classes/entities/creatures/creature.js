@@ -14,7 +14,8 @@ export class Creature extends Entity {
   }
 
   move() {
-    //
+    this.x += this.xMove;
+    this.y += this.yMove;
   }
 
   moveX() {

@@ -84,7 +84,7 @@ export class Game {
   }
 
   tick(dt) {
-    InputManager.tick();
+    inputManager.tick();
     if (state.getState())
       state.getState().tick(dt);
   }

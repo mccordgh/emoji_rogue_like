@@ -11,10 +11,9 @@ export class Player extends Creature {
   }
 
   tick(dt) {
+    console.log(dt)
     this.xMove = this.yMove = 0;
-
-    this.getInput(dt);
-
+    this.getInput();
     this.move();
 
     // this.handler.getGameCamera().centerOnEntity(this);
@@ -30,10 +29,11 @@ export class Player extends Creature {
     // ****** DRAW BOUNDING BOX DON'T DELETE!!
   }
 
-  getInput(dt) {
+  getInput() {
     let manager = this.handler.getInputManager();
-
-    if(manager.up || manager.w || manager.z) {
+    console.log(manager, manager.up);
+    if (manager.up || manager.w || manager.z) {
+      console.log('up');
       this.yMove = -1;
     }
 
@@ -41,7 +41,7 @@ export class Player extends Creature {
       this.yMove = 1;
     }
 
-    if(manager.left || manager.a || manager.q) {
+    if (manager.left || manager.a || manager.q) {
       this.xMove = -1;
     }
 

@@ -74,6 +74,7 @@ export class World {
   }
 
   render(g) {
+    g.clearRect(0, 0, this.width, this.height);
     this.renderTiles(g);
     this.entityManager.render(g);
   }

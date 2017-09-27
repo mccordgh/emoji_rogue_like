@@ -1,7 +1,8 @@
 let keys = [];
 
 export class InputManager {
-  static tick() {
+  tick() {
+    console.log('inputtting');
     this.up = keys[38];
     this.down = keys[40];
     this.left = keys[37];
